@@ -1,7 +1,7 @@
 const getToken = async (code) => {
     const url = 'https://accounts.spotify.com/api/token';
     const idClient = '3bee0ed70de94cd0adda8690609f88a3';
-    const redirectUri = 'http://localhost/SpotifyValeria-front/assets/modules/inicio.html';
+    const redirectUri = 'http://localhost/valeria-spotify-f/assets/modules/inicio.html';
     let codeVerifier = localStorage.getItem('code_verifier');
 
     if (!code) {
