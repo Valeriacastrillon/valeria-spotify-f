@@ -1,5 +1,5 @@
 const clientId = '3bee0ed70de94cd0adda8690609f88a3';
-const redirectUri = 'http://localhost/SpotifyValeria-front/assets/modules/inicio.html';
+const redirectUri = 'http://localhost/valeria-spotify-f/assets/modules/inicio.html';
 
 const scope = 'user-read-private user-read-email';
 const authUrl = new URL("https://accounts.spotify.com/authorize")
@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', async function () {
     const token = localStorage.getItem('token');
     const accessToken = localStorage.getItem('access_token');
 
-    if (token && accessToken && currentPage !== '/SpotifyValeria-front/assets/modules/inicio.html') {
+    if (token && accessToken && currentPage !== '/valeria-spotify-f/assets/modules/inicio.html') {
         // Si hay un token y no estamos en la página de inicio,
         // redirigimos a la página de inicio.
-        window.location.href = 'http://localhost/SpotifyValeria-front/assets/modules/inicio.html';
+        window.location.href = 'http://localhost/valeria-spotify-f/assets/modules/inicio.html';
 
-    } else if (!token && !accessToken && currentPage !== '/SpotifyValeria-front/index.html') {
+    } else if (!token && !accessToken && currentPage !== '/valeria-spotify-f/index.html') {
         // Si no hay un token y no estamos en la página de inicio,
         // redirigimos a la página de inicio.
-        window.location.href = 'http://localhost/SpotifyValeria-front/index.html';
+        window.location.href = 'http://localhost/valeria-spotify-f/index.html';
     }
 
     // Decodificar el token JWT
@@ -176,7 +176,7 @@ function logout() {
 
         setTimeout(() => {
             // Redirigir al usuario a la página de inicio
-            window.location.href = '/SpotifyValeria-front/index.html';
+            window.location.href = '/valeria-spotify-f/index.html';
         }, 3000);
 
     } catch (error) {
