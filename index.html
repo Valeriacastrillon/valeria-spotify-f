@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="shortcut icon" href="./assets/images/spotify-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Spotify Ing. Web</title>
+  </head>
+
+  <body>
+    <div class="container-form sign-up">
+      <div class="welcome-back">
+        <div class="message">
+          <h2>Spotify Web</h2>
+          <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+          <button class="sign-up-btn">Iniciar Sesion</button>
+        </div>
+      </div>
+      <form id="register-form" class="formulario">
+        <h2 class="create-account">Crear una cuenta</h2>
+        <p class="cuenta-gratis">Crear una cuenta gratis</p>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Contraseña" required />
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+    <div class="container-form sign-in">
+      <form id="login-form" class="formulario">
+        <h2 class="create-account">Iniciar Sesion</h2>
+        <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Contraseña" required />
+        <button type="submit">Iniciar Sesion</button>
+      </form>
+      <div class="welcome-back">
+        <div class="message">
+          <h2>Bienvenido de nuevo</h2>
+          <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+          <button class="sign-in-btn">Registrarse</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

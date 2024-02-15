@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="shortcut icon" href="../images/spotify-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Spotify Ing. Web</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a
+          href="http://localhost/SpotifyValeria-front/assets/modules/inicio.html"
+          class="logo"
+        >
+          <img src="../images/spotify-logo.png" alt="Spotify Logo" />
+        </a>
+        <ul class="nav-menu">
+          <li>
+            <a
+              href="http://localhost/SpotifyValeria-front/assets/modules/inicio.html"
+              >Inicio</a
+            >
+          </li>
+          <li><a href="#">Explorar</a></li>
+          <li><a href="#">Artistas</a></li>
+          <li><a href="#">Álbumes</a></li>
+        </ul>
+        <div class="profile">
+          <button class="profile-info" id="username-display">
+            <span class="username"></span>
+            <img
+              src="../images/avatar.png"
+              alt="Profile Image"
+              class="profile-image open-menu"
+            />
+          </button>
+          <ul class="profile-menu view-menu">
+            <li><button>Ver perfil</button></li>
+            <li>
+              <button
+                onclick="logout()"
+                style="color: rgb(201, 45, 45); font-weight: bold"
+              >
+                Cerrar sesión
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="title-releases">
+      <h1>NUEVOS LANZAMIENTOS</h1>
+    </div>
+    <div class="container" id="new-releases-list">
+      <!-- contenido principal, artistas, albumes, canciones, imagen etc. -->
+    </div>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/releases.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+  </body>
+</html>
